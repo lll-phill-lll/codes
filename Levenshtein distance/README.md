@@ -21,4 +21,4 @@ For example, the Levenshtein distance between "kitten" and "sitting" is 3, since
 
 Formula:
 -------
-![Alt text](https://github.com/lll-phill-lll/codes/Levenstein_distance/formula.png "Formula")
+![Alt text](https://github.com/lll-phill-lll/codes/blob/master/Levenshtein%20distance/formula.png "Formula")
