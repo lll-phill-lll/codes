@@ -126,7 +126,7 @@ int main() {
     std::cout << "Accuracy: \n";
     std::cout << checkTheChoise(stream, median) << std::endl;
     // the same but for lognormal distribution
-    std::cout << "Imitating the stream with random distribution, insert the size of stream: \n";
+    std::cout << "Imitating the stream with lognormal distribution, insert the size of stream: \n";
     std::cin >> n;
     stream.clear();
     approxSet.clear();
