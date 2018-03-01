@@ -5,15 +5,15 @@ Problem statement:
 Make a class of binary search tree with unique values, which supports operations:
 - add new node, print sorted tree - value __ number of repeats, 
 - print leafs in the ascending order, 
-- print crosses (nodes which have 2 sucessors) in ascending order, 
-- print branches (nodes, which have 1 seccessor) in ascending order, 
-- print max depth of tree,
-- print if tree is AVL balanced (for every vertex in tree depth of it's subtrees varies by 1).
+- print crosses (nodes which have 2 successors) in ascending order, 
+- print branches (nodes, which have 1 successors) in ascending order, 
+- print max depth of the tree,
+- print if the tree is an AVL balanced (for every vertex in the tree depth of its subtrees varies by 1).
 
 Realisation:
 ------------
 
-There are two classes class Node and class, which consists of elements of Nodes class. Each node has
+There are two classes: class Node and class, which consists of elements of Nodes class. Each node has
 it's value and pointers for two children nodes. For each new vertex memory is allocated using "new" function.
 
 Input data:
@@ -25,6 +25,7 @@ Output data:
 
 - sorted array of input values, 
 - ...
+
 The same as in Problem statement.
 
 Example:
