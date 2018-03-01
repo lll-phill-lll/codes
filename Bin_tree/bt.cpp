@@ -161,22 +161,19 @@ int main() {
         tree.add_node(k);
         std::cin >> k;
     }
-    // 7 3 2 1 9 5 4 6 8 0
-    /*tree.add_node(7);
-    tree.add_node(3);
-    tree.add_node(2);
-    tree.add_node(1);
-    tree.add_node(9);
-    tree.add_node(5);
-    tree.add_node(4);
-    tree.add_node(6);
-    tree.add_node(8); */
-    // std::cout << tree.max_tree_depth();
-    // std::cout << std::endl;
-    int balanced = tree.AVL();
-    if (is_balanced) std::cout << "YES";
+    tree.print_sorted();
+    std::cout << std::endl;
+    tree.leafs();
+    std::cout << std::endl;
+    tree.cross();
+    std::cout << std::endl;
+    tree.branch();
+    std::cout << std::endl;
+    std::cout << tree.max_tree_depth();
+    std::cout << std::endl;
+    if (is_balanced) std::cout << "YES" << std::endl;
     else
-        std::cout << "NO";
+        std::cout << "NO" << std::endl;
     return 0;
 }
 
