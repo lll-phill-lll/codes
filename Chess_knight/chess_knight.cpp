@@ -12,7 +12,6 @@ void go(std::vector<std::vector<int>> &field, std::vector<std::vector<bool>> &be
         std::pair<int, int> current;
         current.first = x;
         current.second = y;
-        // been[x][y] = true;
         field[x][y] = 0;
         togo.push(current);
         while (!togo.empty()) {
@@ -95,8 +94,8 @@ void print(int beg, std::vector<int>& pred, int k, std::vector<int> &result) {
         result.push_back(pred[k]);
     }
 }
-
-void dijkstra(std::vector<std::vector<int>> &table, std::vector<int> &min_len,
+// no need in regular dijkstra algorithm
+/* void dijkstra(std::vector<std::vector<int>> &table, std::vector<int> &min_len,
                std::vector<bool> &been, std::vector<int> &pred) {
     int m = been.end() - been.begin() + 2;
     auto min_it = been.end();
@@ -119,7 +118,7 @@ void dijkstra(std::vector<std::vector<int>> &table, std::vector<int> &min_len,
             // pred[i] = min_it - been.begin();
         }
     }
-}
+} */
 
 int main() {
     int size_x, size_y;
@@ -131,12 +130,6 @@ int main() {
     std::cin >> x >> y;
     field[x][y] = 0;
     go(field, been, x, y);
-    /* for (size_t i = 1; i != size_x + 1; ++i) {
-        for (size_t j = 1; j != size_y + 1; ++j) {
-            std::cout << field[i][j] << '\t';
-        }
-        std::cout << std::endl;
-    } */
     int num;
     std::cin >> num;
     int f, s;
@@ -147,11 +140,10 @@ int main() {
         if (been[f][s] == 0) fail = true;
         sum += field[f][s];
     }
-    // std::cout << fail << " ";
     if (fail != 0) {
-        std::cout << -1;
+        std::cout << -1 << std::endl;
     } else {
-        std::cout << sum;
+        std::cout << sum << std::endl;
     }
 }
 
