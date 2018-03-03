@@ -1,18 +1,27 @@
-Программа второго модуля
-Встроенные типы данных, std::string. Потоковый ввод-вывод. Условный оператор, циклы, switch.
-Шаблон std::vector. Структуры как POD-типы.
-Функции. Передача параметров по значению и по ссылке. Константность. Шаблоны функций.
-Контейнеры map/set, unordered_map/unordered_set. Range-based for.
-Алгоритмы стандартной библиотеки. Итераторы. Лямбда-функции.
-Битовые операции. Выражения. Приоритет операторов.
-Временные объекты. Время жизни объекта. Классы. Конструкторы, деструктор. Перегрузка операторов.
-Стек и динамическая память. Умные указатели: std::unique_ptr/std::shared_ptr.
-Исключения. Move-семантика.
-Примерная программа третьего модуля
-Обработка исключений.
-Динамическая память. Указатели. Низкоуровневые массивы. С-строки.
-Идиома RAII. Контейнеры STL как воплощение идиомы RAII. Умные указатели unique_ptr/shared_ptr.
-Пример: собственная реализация unique_ptr. Move-семантика.
-Наследование. Полиморфизм. Виртуальные функции.
-Пример: собственная реализация контейнера vector.
-Единицы трансляции. Сборка программы.
+# Welcome to my repository!
+<h1> Filitov Mikhail </h1>
+----------------------------
+Here you can find some basic algorithms implementations and descriptions for them.
+The main directions of codes:
+- dynamic programming
+- graph theory
+	- Dijkstra algorithm
+	- search in graph
+- std containers and types implementation
+
+Problems:
+-----------
+
++ [Finding median in the stream]( https://github.com/lll-phill-lll/codes/tree/master/streaming_median
+        "implementation and description")
+ + [Topological sort](https://github.com/lll-phill-lll/codes/tree/master/topsort "implementation and description")
+ + [Comparison of std::sort algorithms and my implementations](https://github.com/lll-phill-lll/codes/tree/master/sorts "implementation and description")
+ + [Template matrix class](https://github.com/lll-phill-lll/codes/tree/master/Matrix_class "implementation and description")
+ + [Finding minimum summary paths lengths for chess knights to destination cage](https://github.com/lll-phill-lll/codes/tree/master/Chess_knight "implementation and description")
+ + [Binary tree class](https://github.com/lll-phill-lll/codes/blob/master/Bin_tree/bt.cpp "implementation and description")
+ + [Levenshtain distance](https://github.com/lll-phill-lll/codes/tree/master/Levenshtein%20distance "implementation and description")
+ + [Hash table](https://github.com/lll-phill-lll/codes/tree/master/Hash_table "implementation and description")
+ + [Chess knights](https://github.com/lll-phill-lll/codes/tree/master/Chess_knight "implementation and description")
+
+
+
