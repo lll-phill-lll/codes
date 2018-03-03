@@ -1,12 +1,12 @@
 # Welcome to my repository!
 <h1> Filitov Mikhail </h1>
-----------------------------
 Here you can find some basic algorithms implementations and descriptions for them.
+
 The main directions of codes:
 - dynamic programming
 - graph theory
-	- Dijkstra algorithm
-	- search in graph
+	+ Dijkstra algorithm
+	+ search in graph
 - std containers and types implementation
 
 Problems:
