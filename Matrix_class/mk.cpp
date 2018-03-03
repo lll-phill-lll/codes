@@ -16,10 +16,16 @@ class Matrix {
     }
 
     const T& operator() (size_t i, size_t j) const {
+        if (i > data.size() - 1 || j > data[0].size() - 1 || i < 0 || j < 0) {
+            throw std::out_of_range("operator () error");
+        }
         return data[i][j];
     }
 
     T& operator() (size_t i, size_t j) {
+        if (i > data.size() - 1 || j > data[0].size() - 1 || i < 0 || j < 0) {
+            throw std::out_of_range("operator () error");
+        }
         return data[i][j];
     }
 
@@ -28,6 +34,9 @@ class Matrix {
     }
 
     Matrix& operator += (const Matrix& other) {
+        if (data.size() != other.size().first || data[0].size() != other.size().second) {
+            throw std::length_error("Sum: matrices has different sizes!"); 
+        }
         for (size_t i = 0; i != data.size(); ++i)
             for (size_t j = 0; j != data[0].size(); ++j)
                 data[i][j] += other.data[i][j];
@@ -42,6 +51,7 @@ class Matrix {
 
     template <typename M>
     Matrix& operator *= (const M& other) {
+
         for (size_t i = 0; i != data.size(); ++i)
             for (size_t j = 0; j != data[0].size(); ++j)
                 data[i][j] *= other;
@@ -56,6 +66,9 @@ class Matrix {
     }
 
     Matrix operator * (const Matrix& other) {
+        if (data[0].size() != other.size().first) {
+            throw std::length_error("Multiplication error, matrices should be NxM MxK sizes!");
+        }
         vector<vector<T>> new_m((*this).size().first, vector<T>(other.size().second, 0));
         Matrix<T> new_mat = Matrix<T>(new_m);
         for (size_t i = 0; i != this -> size().first; ++i) {
@@ -112,6 +125,17 @@ std::ostream& operator << (std::ostream& out, const Matrix<T>& mat) {
 }
 
 int main() {
-    Matrix<int> First_matrix;
-
+    std::vector<std::vector<int>> first_vec = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    std::vector<std::vector<int>> second_vec = {{12, 11, 10}, {9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
+    Matrix<int> A(first_vec);
+    Matrix<int> B(second_vec);
+    std::cout << "Matrix A:" << std::endl << "----------------------" << std::endl;
+    std::cout << A << std::endl;
+    std::cout << "Matrix B:" << std::endl << "----------------------" << std::endl;
+    std::cout << B << std::endl;
+    std::cout << B.size().first << " " << B.size().second << std::endl;
+    std::cout <<  B(3, 2) << std::endl;; 
+    A = B;
+    std::cout << A << std::endl;
+    return 0;
 }
