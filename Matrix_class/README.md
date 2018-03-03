@@ -2,7 +2,7 @@
 
 Problem statement:
 -----------------
-Write template class matrix.
+Write template matrix class.
 
 Implementation:
 ---------------
@@ -11,11 +11,11 @@ Basic container is std::vector. Options and operations class supports:
 - operator "+" for two matrices,
 - operator "+=" for matrices, 
 - operators "*" and "*=" for matrices,
-- operator "(i, j)", return value is i, j element of matrix (const and non const),
+- operator "(i, j)", returns value is i, j element of matrix (const and non const),
 - operator "*" and "*=", for scalar element of other template, 
 - method "transpose", which transposes "this" matrix and changes it,
-- method "transposed", which is const, it  only returns transposed matrix, 
-- also it is printable with std::cout, operator "<<" difined.
+- method "transposed", which is const, it returns transposed matrix, 
+- also class objects are printable with std::cout, operator "<<" difined.
 
 Future improvements:
 -------------------
