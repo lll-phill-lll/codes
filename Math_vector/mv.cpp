@@ -90,3 +90,12 @@ int operator , (const MathVector<T>& u, const MathVector<T>& v) {
     return sum;
 }
 
+int main() {
+    std::vector<int> v(10);
+    for (int i = 1; i != 11; ++i) {
+        v[i] = i;
+    }
+    MathVector<int> V1(v.begin(), v.begin() + 4), V2(v.begin() + 5, v.end());
+    std::cout << V1.Dimension() << V2.Dimension() << std::endl;
+    return 0;
+}
