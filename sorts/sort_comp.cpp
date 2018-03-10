@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <algorithm>
+#include <limits>
 
 using std::vector;
 
@@ -185,28 +186,28 @@ int main() {
     qsort(numbers_qsort.begin(), numbers_qsort.end());
     unsigned int end_time_qsort = clock();
     int time_qsort = end_time_qsort - start_time_qsort;
-    std::cout << "Quick sort:" << "\t" << time_qsort / 1000 << "s " << time_qsort % 1000 << "ms" << std::endl;
+    std::cout << "Quick sort:" << "\t" << time_qsort / CLOCKS_PER_SEC<< "s " << time_qsort % CLOCKS_PER_SEC << "ms" << std::endl;
 
     // merge
     unsigned int start_time_merge = clock();
     qsort(numbers_merge.begin(), numbers_merge.end());
     unsigned int end_time_merge = clock();
     int time_merge = end_time_merge - start_time_merge;
-    std::cout << "Merge sort:" << "\t" << time_merge / 1000 << "s " << time_merge % 1000 << "ms" << std::endl;
+    std::cout << "Merge sort:" << "\t" << time_merge / CLOCKS_PER_SEC << "s " << time_merge % CLOCKS_PER_SEC << "ms" << std::endl;
 
     // qsort_std
     unsigned int start_time_qsort_std = clock();
     std::sort(numbers_qsort_std.begin(), numbers_qsort_std.end());
     unsigned int end_time_qsort_std = clock();
     int time_qsort_std = end_time_qsort_std - start_time_qsort_std;
-    std::cout << "Std quick sort:" << "\t" << time_qsort_std / 1000 << "s " << time_qsort_std % 1000 << "ms" << std::endl;
+    std::cout << "Std quick sort:" << "\t" << time_qsort_std / CLOCKS_PER_SEC << "s " << time_qsort_std % CLOCKS_PER_SEC << "ms" << std::endl;
 
     // heap
     unsigned int start_time_heap = clock();
     heap(numbers_heap.begin(), numbers_heap.end());
     unsigned int end_time_heap = clock();
     int time_heap = end_time_heap - start_time_heap;
-    std::cout << "Heap sort:" << "\t" << time_heap / 1000 << "s " << time_heap % 1000 << "ms" << std::endl;
+    std::cout << "Heap sort:" << "\t" << time_heap / CLOCKS_PER_SEC << "s " << time_heap % CLOCKS_PER_SEC << "ms" << std::endl;
 
     // heap_std
     unsigned int start_time_heap_std = clock();
@@ -214,7 +215,7 @@ int main() {
     std::sort_heap(numbers_heap_std.begin(), numbers_heap_std.end());
     unsigned int end_time_heap_std = clock();
     int time_heap_std = end_time_heap_std - start_time_heap_std;
-    std::cout << "Std heap sort:" << "\t" << (time_heap_std) / 1000 << "s " << time_heap_std % 1000 << "ms" << std::endl;
+    std::cout << "Std heap sort:" << "\t" << (time_heap_std) / CLOCKS_PER_SEC << "s " << time_heap_std % CLOCKS_PER_SEC << "ms" << std::endl;
 
     if (sw) {
         // bubble
@@ -222,14 +223,14 @@ int main() {
         bubble(numbers_bubble.begin(), numbers_bubble.end());
         unsigned int end_time_bubble = clock();
         int time_bubble = end_time_bubble - start_time_bubble;
-        std::cout << "Bubble sort:" << "\t" << time_bubble / 1000 << "s " << time_bubble % 1000 << "ms" << std::endl;
+        std::cout << "Bubble sort:" << "\t" << time_bubble / CLOCKS_PER_SEC  << "s " << time_bubble % CLOCKS_PER_SEC << "ms" << std::endl;
 
         // insert
         unsigned int start_time_insert = clock();
         insert(numbers_insert.begin(), numbers_insert.end());
         unsigned int end_time_insert = clock();
         int time_insert = end_time_insert - start_time_insert;
-        std::cout << "Inserts sort:" << "\t" << time_insert / 1000 << "s " << time_insert % 1000 << "ms" << std::endl;
+        std::cout << "Inserts sort:" << "\t" << time_insert / CLOCKS_PER_SEC  << "s " << time_insert % CLOCKS_PER_SEC  << "ms" << std::endl;
     }
 
     // qsort + bubble
@@ -237,14 +238,14 @@ int main() {
     quick_bubble(numbers_qsort_and_bubble.begin(), numbers_qsort_and_bubble.end());
     unsigned int end_time_qsort_and_bubble = clock();
     int time_qsort_and_bubble = end_time_qsort_and_bubble - start_time_qsort_and_bubble;
-    std::cout << "Quick sort + bubble sort:" << "\t" << time_qsort_and_bubble / 1000 << "s " << time_qsort_and_bubble % 1000 << "ms" << std::endl;
+    std::cout << "Quick sort + bubble sort:" << "\t" << time_qsort_and_bubble / CLOCKS_PER_SEC  << "s " << time_qsort_and_bubble % CLOCKS_PER_SEC  << "ms" << std::endl;
 
     // qsort + inserts
     unsigned int start_time_qsort_and_insert = clock();
     quick_insert(numbers_qsort_and_insert.begin(), numbers_qsort_and_insert.end());
     unsigned int end_time_qsort_and_insert = clock();
     int time_qsort_and_insert = end_time_qsort_and_insert - start_time_qsort_and_insert;
-    std::cout << "Quick sort + inserts sort:" << "\t" << time_qsort_and_insert / 1000 << "s " << time_qsort_and_insert % 1000 << "ms" << std::endl;
+    std::cout << "Quick sort + inserts sort:" << "\t" << time_qsort_and_insert / CLOCKS_PER_SEC  << "s " << time_qsort_and_insert % CLOCKS_PER_SEC  << "ms" << std::endl;
 
     std::cout << "To check if the algorithms work correctly using if_sorted function, enter 1," << std::endl << "otherwise enter 0:" << std::endl;
     int y;
