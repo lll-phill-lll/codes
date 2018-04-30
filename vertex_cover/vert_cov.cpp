@@ -53,7 +53,7 @@ int main() {
     read_the_graph(graph_list.begin(), m, edges);
     std::vector<int> vertex_to_rand;
     // print_the_graph(graph_list.begin(), graph_list.end());
-    for (int t = 0; t != 3000; ++t) {
+    for (int t = 0; t != n * 500; ++t) {
         vertex_to_rand.clear();
         int nodes_in_cover = k + rand() % (n - k + 1);
         for (int i = 0; i != n; ++i) {
@@ -61,8 +61,8 @@ int main() {
         }
         for (int i = 0; i != nodes_in_cover; ++i) {
             int current_node = rand() % n;
-            vertex_in_VC[i] = 1;
-            vertex_to_rand.push_back(i);
+            vertex_in_VC[current_node] = 1;
+            vertex_to_rand.push_back(current_node);
         }
         if (correct_vector_cover(vertex_in_VC, edges)) {
             int s = n * 15;
