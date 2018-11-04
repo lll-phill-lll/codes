@@ -9,6 +9,9 @@ The main directions of codes:
 	+ search in graph
 - std containers and types implementation
 
+Golang code:
+---------
++ [Compute MD5 of file](https://github.com/lll-phill-lll/web_service_GO)
 
 Problems:
 -----------
