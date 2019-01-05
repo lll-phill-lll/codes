@@ -11,7 +11,8 @@ The main directions of codes:
 
 Golang code:
 ---------
-+ [Compute MD5 of file](https://github.com/lll-phill-lll/web_service_GO)
++ [Server that computes MD5 of files](https://github.com/lll-phill-lll/web_service_GO)
++ [Pipeline of functions](https://github.com/lll-phill-lll/function-pipeline/tree/master)
 
 Problems:
 -----------
