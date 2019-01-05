@@ -7,6 +7,10 @@ Golang code:
 + [Server that computes MD5 of files](https://github.com/lll-phill-lll/web_service_GO)
 + [Pipeline of functions](https://github.com/lll-phill-lll/function-pipeline/tree/master)
 
+C++ projects:
+------------
++ [Path planning](https://github.com/lll-phill-lll/Path_planning)
+
 C++ algorithms code:
 -----------
 + [Finding median in the stream]( https://github.com/lll-phill-lll/codes/tree/master/algorithms/streaming_median
