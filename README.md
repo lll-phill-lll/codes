@@ -1,20 +1,13 @@
 # Welcome to my repository!
 <h1> Filitov Mikhail </h1>
-Here you can find some basic algorithms implementations and descriptions for them.
-
-The main directions of codes:
-- dynamic programming
-- graph theory
-	+ Dijkstra algorithm
-	+ search in graph
-- std containers and types implementation
+Here you can find some algorithms implementations and descriptions for them.
 
 Golang code:
 ---------
 + [Server that computes MD5 of files](https://github.com/lll-phill-lll/web_service_GO)
 + [Pipeline of functions](https://github.com/lll-phill-lll/function-pipeline/tree/master)
 
-Problems:
+C++ algorithms code:
 -----------
 + [Finding median in the stream]( https://github.com/lll-phill-lll/codes/tree/master/algorithms/streaming_median
         "implementation and description")
