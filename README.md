@@ -5,7 +5,7 @@ Here you can find some algorithms implementations and descriptions for them.
 
 Recent projects:
 -------------
-+ [Fake news detection](https://github.com/sk-nlp-team/misinformation_detection) - Compare different models and datasets for news classification
++ [Fake news detection](https://github.com/sk-nlp-team/fake_news_detection) - Compare different models and datasets for news classification
 + [Voice filter](https://github.com/aniton/VoiceFilter-by-Megatron3000ultraSkill) - Compare quality of speech recognition with/without voice filter (separate the voice from the surrounding noises)
 + [Search engine and GUI for articles and datasets](https://github.com/SK-FSE/SEArch) - Find articles by description, search datasets used in given articles
 + [Gaze correction](https://github.com/lll-phill-lll/gaze_correction) - Correct gaze direction during video calls
