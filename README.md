@@ -5,11 +5,11 @@ Here you can find some algorithms implementations and descriptions for them.
 
 Recent projects:
 -------------
-+ [Fake news detection](https://github.com/sk-nlp-team/misinformation_detection)
-+ [Voice filter](https://github.com/aniton/VoiceFilter-by-Megatron3000ultraSkill)
-+ [Search engine and GUI for articles and datasets](https://github.com/SK-FSE/SEArch)
-+ [Gaze correction](https://github.com/lll-phill-lll/gaze_correction)
-+ [Error reducing codes algorithms](https://github.com/supereboyteam/error-reducing-codes)
++ [Fake news detection](https://github.com/sk-nlp-team/misinformation_detection) (Compare different model and datasets for news classification)
++ [Voice filter](https://github.com/aniton/VoiceFilter-by-Megatron3000ultraSkill) (Compare quality of speech recognition with/without voice filter (separate the voice from the surrounding noises))
++ [Search engine and GUI for articles and datasets](https://github.com/SK-FSE/SEArch) (Find articles by description, search datasets used in given articles)
++ [Gaze correction](https://github.com/lll-phill-lll/gaze_correction) (Correct gaze direction during video calls)
++ [Error reducing codes algorithms](https://github.com/supereboyteam/error-reducing-codes) (Test different error reducing codes)
 
 
 Golang code:
