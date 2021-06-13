@@ -7,8 +7,8 @@ Recent projects:
 -------------
 + [Fake news detection](https://github.com/sk-nlp-team/misinformation_detection)
 + [Voice filter](https://github.com/aniton/VoiceFilter-by-Megatron3000ultraSkill)
-+ [Articles and datasets search engine and GUI] (https://github.com/SK-FSE/SEArch)
-+ [Error reducing codes algorithms] (https://github.com/supereboyteam/error-reducing-codes)
++ [Articles and datasets search engine and GUI](https://github.com/SK-FSE/SEArch)
++ [Error reducing codes algorithms](https://github.com/supereboyteam/error-reducing-codes)
 
 
 Golang code:
